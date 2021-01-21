@@ -3,7 +3,6 @@ function averagePair(arr, avg) {
   let right = 1;
 
   while (right < arr.length) {
-    console.log(`Left: ${left}  Right: ${right}`);
     let sum = parseFloat(((arr[left] + arr[right]) / 2).toFixed(1));
     if (sum === avg) {
       return true;
