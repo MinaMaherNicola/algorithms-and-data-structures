@@ -10,19 +10,11 @@ function sameFrequency(int1, int2) {
   let obj2 = {};
 
   for (let i = 0; i < int1.length; i++) {
-    if (obj1[int1[i]]) {
-      obj1[int1[i]] += 1;
-    } else {
-      obj1[int1[i]] = 1;
-    }
+    obj1[int1[i]] = (obj1[int1[i]] || 0) + 1;
   }
 
   for (let i = 0; i < int2.length; i++) {
-    if (obj2[int2[i]]) {
-      obj2[int2[i]] += 1;
-    } else {
-      obj2[int2[i]] = 1;
-    }
+    obj2[int2[i]] = (obj2[int2[i]] || 0) + 1;
   }
 
   if (JSON.stringify(obj1) === JSON.stringify(obj2)) {
