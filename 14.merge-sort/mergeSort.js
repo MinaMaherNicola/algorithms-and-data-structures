@@ -1,4 +1,4 @@
-const mergeV3 = (arrOne = [], arrTwo = []) => {
+const merge = (arrOne, arrTwo) => {
   let newArr = [];
   let i = 0;
   let j = 0;
@@ -25,4 +25,12 @@ const mergeV3 = (arrOne = [], arrTwo = []) => {
   return newArr;
 };
 
-console.log(mergeV3([10, 20, 30, 100], [5, 200, 300]));
+const mergeSort = (arr = []) => {
+  if (arr.length <= 1) return arr;
+  const mid = Math.floor(arr.length / 2);
+  const left = mergeSort(arr.slice(0, mid));
+  const right = mergeSort(arr.slice(mid));
+  return merge(left, right);
+};
+
+console.log(mergeSort([6, 2, 10, 30]));
