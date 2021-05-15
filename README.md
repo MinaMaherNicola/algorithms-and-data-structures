@@ -1,1 +1,1 @@
-# js-algorithms-and-datastructures-masterclass
+# Self-study of algorithms & data structures through books and courses
