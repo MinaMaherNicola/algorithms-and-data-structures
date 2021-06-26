@@ -1,1 +1,1 @@
-# Self-study of algorithms & data structures through books and courses
+# Self study of algorithms & data structures through books and courses
